@@ -31,3 +31,15 @@ var purchaseDate
 	//call Event schedule upsell query.
  }
 }
+
+
+if (clientLogin == true) {
+	client();
+}
+else if (userLogin==true){
+	Scheduling();
+	if (animalHealth==true) {
+		healthRecords();
+	}else inventory();
+}
+
