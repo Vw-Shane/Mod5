@@ -63,9 +63,12 @@ function client(events) {
 
 if (clientLogin == true) {
     client();
-} else if (userLogin == true) {
+} else if (user == true) {
     Scheduling();
     if (animalHealth == true) {
         healthRecords();
     } else inventory();
+} else if (admin==true) {
+	admin();
+	user();
 }
